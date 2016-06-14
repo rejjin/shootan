@@ -1,6 +1,0 @@
-C:\Users\rejjin\Desktop\CodechanGame\CodechanGame\bin\CodechanGame.dll.config
-C:\Users\rejjin\Desktop\CodechanGame\CodechanGame\bin\CodechanGame.dll
-C:\Users\rejjin\Desktop\CodechanGame\CodechanGame\bin\CodechanGame.pdb
-C:\Users\rejjin\Desktop\CodechanGame\CodechanGame\obj\Debug\CodechanGame.csprojResolveAssemblyReference.cache
-C:\Users\rejjin\Desktop\CodechanGame\CodechanGame\obj\Debug\CodechanGame.dll
-C:\Users\rejjin\Desktop\CodechanGame\CodechanGame\obj\Debug\CodechanGame.pdb
