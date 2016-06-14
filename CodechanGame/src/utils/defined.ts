@@ -14,7 +14,7 @@ module CodechanGame.Client {
                 document.getElementsByTagName('body')[0].clientHeight;
         }
         public static get URL_CONNECTION(): string {
-            return "http://green-wagon-186233.nitrousapp.com:8080";
+            return "http://localhost:8080";
         }
         public static connection: Connection = null;
 
