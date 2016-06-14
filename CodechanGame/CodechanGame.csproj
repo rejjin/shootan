@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{265441B2-683C-46DC-BD47-097918F970F2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build\assets\map\collider.png" />
+    <Content Include="build\assets\map\map.png" />
+    <Content Include="build\assets\sounds\aargh.mp3" />
+    <Content Include="build\assets\sounds\bg-music.ogg" />
+    <Content Include="build\assets\sounds\gun1.mp3" />
+    <Content Include="build\assets\sounds\gun2.mp3" />
+    <Content Include="build\assets\sounds\gun3.mp3" />
+    <Content Include="build\assets\sounds\gun4.mp3" />
+    <Content Include="build\assets\sounds\gun5.mp3" />
+    <Content Include="build\assets\sounds\logo_loop.ogg" />
+    <Content Include="build\assets\sounds\reload.mp3" />
+    <Content Include="build\assets\sprites\blood.png" />
+    <Content Include="build\assets\sprites\bullet.png" />
+    <Content Include="build\assets\sprites\bullet1.png" />
+    <Content Include="build\assets\sprites\bullet_ui.png" />
+    <Content Include="build\assets\sprites\debug-grid.png" />
+    <Content Include="build\assets\sprites\fire1.png" />
+    <Content Include="build\assets\sprites\player.png" />
+    <Content Include="build\assets\sprites\player_marker.png" />
+    <Content Include="build\assets\sprites\player_marker_green.png" />
+    <Content Include="build\assets\ui\bg-loader.png" />
+    <Content Include="build\assets\ui\logo.png" />
+    <Content Include="build\libs\phaser-tiled.js" />
+    <Content Include="build\libs\phaser.js" />
+    <Content Include="build\libs\socket.io-1.4.5.js" />
+    <Content Include="build\styles\default.css" />
+    <Content Include="build\assets\ui\gameLogo.png" />
+    <Content Include="build\game.js" />
+    <Content Include="build\index.html" />
+    <Content Include="build\libs\phaser.min.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build\game.js.map" />
+    <Content Include="build\assets\sounds\click.ogg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <TypeScriptCompile Include="src\gameObjects\bullet.ts" />
+    <TypeScriptCompile Include="src\gameObjects\playerStruct.ts" />
+    <TypeScriptCompile Include="src\gameObjects\sounds.ts" />
+    <TypeScriptCompile Include="tsDefinitions\socket.io-client.d.ts" />
+    <TypeScriptCompile Include="src\client\connection.ts" />
+    <TypeScriptCompile Include="src\game.ts" />
+    <TypeScriptCompile Include="src\gameObjects\player.ts" />
+    <TypeScriptCompile Include="src\gameStates\boot.ts" />
+    <TypeScriptCompile Include="src\gameStates\level.ts" />
+    <TypeScriptCompile Include="src\gameStates\mainMenu.ts" />
+    <TypeScriptCompile Include="src\gameStates\preloader.ts" />
+    <TypeScriptCompile Include="src\utils\defined.ts" />
+    <TypeScriptCompile Include="tsDefinitions\p2.d.ts" />
+    <TypeScriptCompile Include="tsDefinitions\phaser.comments.d.ts" />
+    <TypeScriptCompile Include="tsDefinitions\pixi.comments.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build\assets\sprites\player.json" />
+    <Content Include="packages.config" />
+    <Content Include="build\assets\map\map.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>CodechanGame</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50494</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50494/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptOutFile>build/game.js</TypeScriptOutFile>
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
